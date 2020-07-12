@@ -13,6 +13,16 @@ body {
     font-weight: 400;
 }
 
+.display-3 {
+    font-size: 3.8rem;
+    font-weight: 400;
+    /* margin-bottom: 20px!important; */
+}
+
+a:hover {
+    text-decoration: none;
+}
+
 /* SIDEBAR */
 
 #sidebar {
@@ -56,14 +66,14 @@ body {
 }
 
 #sidebar-dropdown a {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     margin-bottom: 10px;
 }
 
 .menu-item-label  {
     position: fixed;
     margin-left: 70px;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
 }
 
 /* CONTENT */
@@ -78,7 +88,7 @@ body {
 }
 
 .content-section {
-    padding: 20px 20px;
+    padding: 10px 20px;
 }
 
 .message {
@@ -87,9 +97,22 @@ body {
     padding: 0px 15px;
 }
 
+#courses {
+    max-width: 1300px;
+}
+
 #upcoming  {
     margin-bottom: 100px;
 }
+
+#upcoming, #past {
+    box-shadow: 1px 5px 10px rgba(0,0,0,0.3);
+}
+/* 
+.view-all {
+    float: right;
+    margin-top: 8px;
+} */
 
 .table-row {
     width: 100%;

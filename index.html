@@ -21,8 +21,9 @@
             <img src="img/profile.jpg" class="mb-3 img-fluid rounded-circle" id="profile-img">
             <h1 class="mb-3">Welcome, John <a class="text-white" data-toggle="collapse" data-target="#sidebar-dropdown"> <i class="ml-2 fas fa-caret-down"></i></a></h1>
             <div id="sidebar-dropdown" class="collapse">
-                <a href="/" class="d-block text-left lead text-white"><i class="fas fa-sign-out-alt mb-2 mr-3"></i>Logout</a>
-                <a href="/" class="lead text-white"><i class="fas fa-user-edit mr-3"></i>Edit Profile</a>
+                <a href="/" class="d-block text-left lead text-white"><i class="fas fa-sign-out-alt mb-1 mr-3"></i>Logout</a>
+                <a href="/" class="d-block text-left lead text-white"><i class="fas fa-id-badge mt-2 mr-3"></i>View Profile</a>
+                <a href="/" class="lead text-white"><i class="fas fa-user-edit mb-2 mr-3"></i>Edit Profile</a>
             </div>
             <hr>
         </div>
@@ -31,9 +32,9 @@
                 <i class="fas fa-2x fa-home"></i>
                 <p class="menu-item-label lead">Dashboard</p>
             </a>
-            <a href="#classes" class="sidebar-menu-item">
+            <a href="#courses" class="sidebar-menu-item">
                 <i class="fas fa-2x fa-chalkboard-teacher"></i>
-                <p class="menu-item-label lead">Classes</p>
+                <p class="menu-item-label lead">Courses</p>
             </a>
             <a href="#calender" class="sidebar-menu-item">
                 <i class="far fa-2x fa-calendar-alt"></i>
@@ -49,9 +50,10 @@
     <div id="content">
         <button id="menu-button" class="mb-4 btn btn-outline-info"><i class="mr-2 fas fa-bars"></i>Menu</button>
         <div id="dashboard" class="content-section">
-            <h1 class="display-3 mb-5">
+            <h1 class="display-3 mb-0">
                 Welcome to your Dashboard
             </h1>    
+            <hr class="mt-1 mb-5">
             <div class="row">
                 <div class="col-xl-8 dash-card" id="messages">
                     <div class="card mb-4">
@@ -115,10 +117,11 @@
                 </div>
             </div>
         </div>
-        <div id="classes" class="content-section">
-            <h1 class="display-3 my-5">Your Classes</h1>
+        <div id="courses" class="content-section">
+            <h1 class="display-3 mt-5 mb-0">Your Courses</h1>
+            <hr class="mt-1 mb-5">
             <div class="row">
-                <div class="col-sm-6 col-xl-3">
+                <div class="col-sm-6 col-md-4 col-xl-3">
                     <div class="card mb-4 p-0">
                         <div class="card-header p-0">
                             <img src="img/class.jpg" alt="" class="card-img-top">
@@ -132,7 +135,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3">
+                <div class="col-sm-6 col-md-4 col-xl-3">
                     <div class="card mb-4 p-0">
                         <div class="card-header p-0">
                             <img src="img/dance.jpeg" alt="" class="card-img-top">
@@ -146,7 +149,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-sm-6 col-xl-3">
+                <div class="col-sm-6 col-md-4 col-xl-3">
                     <div class="card mb-4 p-0">
                         <div class="card-header p-0">
                             <img src="img/yoga.jpeg" alt="" class="card-img-top">
@@ -161,82 +164,100 @@
                     </div>
                 </div>
             </div>
+            <a href="#" class="my-4 p-3 btn btn-lg btn-primary" id="add-class-btn"> <i class="fa fa-plus"></i> Add new course</a>
         </div>
         <div id="calender" class="content-section">
-            <h1 class="display-3 my-5">Calender</h1>
+            <h1 class="display-3 mt-5 mb-0">Calender</h1>
+            <hr class="mt-1 mb-5">
             <div id="schedule" class="row">
                 <div class="col-xl-6">
                     <div id="upcoming">
                         <div class="table-head bg-warning text-white p-3">
-                            <h2 class="m-0">Upcoming Classes</h2>
+                            <h1 class="m-0">
+                                Upcoming Classes
+                            </h1>
                         </div>
                         <div class="table-content">
                             <div class="table-row">
-                                <h3>Class Name</h3>
+                                <h3 class="">Class Name <span class="ml-1 ml-md-3 lead">(15 July, Friday, 10:30AM)</span></h3>
                                 <hr class="m-0 mb-3">
                                 <div class="table-row-inner">
-                                    <div> 
-                                        <p class="lead">15 July, Friday, 10:30AM</p>
+                                    <div>
+                                        <a href="/" class="table-data lead">10 students enrolled</a>
+                                        <p class="m-0"><a href="/" class="lead">4 demo students</a></p>
                                     </div>
-                                    <a href="/" class="table-data lead">10 students enrolled</a>
+                                    <div>
+                                        <a href="/" class="table-data lead">Send Mail</a>
+                                        <p class="m-0"><a href="/" class="lead">Send SMS</a></p>
+                                    </div>                                 
                                     <a href="/" class="table-data btn btn-outline-success">Link</a>
                                 </div>
                             </div>
                             <div class="table-row">
-                                <h3>Class Name</h3>
+                                <h3 class="">Class Name <span class="ml-1 ml-md-3 lead">(15 July, Friday, 10:30AM)</span></h3>
                                 <hr class="m-0 mb-3">
                                 <div class="table-row-inner">
-                                    <div> 
-                                        <p class="lead">15 July, Friday, 10:30AM</p>
+                                    <div>
+                                        <a href="/" class="table-data lead">10 students enrolled</a>
+                                        <p class="m-0"><a href="/" class="lead">4 demo students</a></p>
                                     </div>
-                                    <a href="/" class="table-data lead">10 students enrolled</a>
+                                    <div>
+                                        <a href="/" class="table-data lead">Send Mail</a>
+                                        <p class="m-0"><a href="/" class="lead">Send SMS</a></p>
+                                    </div>                                 
                                     <a href="/" class="table-data btn btn-outline-success">Link</a>
                                 </div>
                             </div>
                             <div class="table-row">
-                                <h3>Class Name</h3>
+                                <h3 class="">Class Name <span class="ml-1 ml-md-3 lead">(15 July, Friday, 10:30AM)</span></h3>
                                 <hr class="m-0 mb-3">
                                 <div class="table-row-inner">
-                                    <div> 
-                                        <p class="lead">15 July, Friday, 10:30AM</p>
+                                    <div>
+                                        <a href="/" class="table-data lead">10 students enrolled</a>
+                                        <p class="m-0"><a href="/" class="lead">4 demo students</a></p>
                                     </div>
-                                    <a href="/" class="table-data lead">10 students enrolled</a>
+                                    <div>
+                                        <a href="/" class="table-data lead">Send Mail</a>
+                                        <p class="m-0"><a href="/" class="lead">Send SMS</a></p>
+                                    </div>                                 
                                     <a href="/" class="table-data btn btn-outline-success">Link</a>
                                 </div>
                             </div>
                             <div class="table-row">
-                                <h3>Class Name</h3>
+                                <h3 class="">Class Name <span class="ml-1 ml-md-3 lead">(15 July, Friday, 10:30AM)</span></h3>
                                 <hr class="m-0 mb-3">
                                 <div class="table-row-inner">
-                                    <div> 
-                                        <p class="lead">15 July, Friday, 10:30AM</p>
+                                    <div>
+                                        <a href="/" class="table-data lead">10 students enrolled</a>
+                                        <p class="m-0"><a href="/" class="lead">4 demo students</a></p>
                                     </div>
-                                    <a href="/" class="table-data lead">10 students enrolled</a>
+                                    <div>
+                                        <a href="/" class="table-data lead">Send Mail</a>
+                                        <p class="m-0"><a href="/" class="lead">Send SMS</a></p>
+                                    </div>                                 
                                     <a href="/" class="table-data btn btn-outline-success">Link</a>
                                 </div>
                             </div>
                             <div class="table-row">
-                                <h3>Class Name</h3>
+                                <h3 class="">Class Name <span class="ml-1 ml-md-3 lead">(15 July, Friday, 10:30AM)</span></h3>
                                 <hr class="m-0 mb-3">
                                 <div class="table-row-inner">
-                                    <div> 
-                                        <p class="lead">15 July, Friday, 10:30AM</p>
+                                    <div>
+                                        <a href="/" class="table-data lead">10 students enrolled</a>
+                                        <p class="m-0"><a href="/" class="lead">4 demo students</a></p>
                                     </div>
-                                    <a href="/" class="table-data lead">10 students enrolled</a>
+                                    <div>
+                                        <a href="/" class="table-data lead">Send Mail</a>
+                                        <p class="m-0"><a href="/" class="lead">Send SMS</a></p>
+                                    </div>                                 
                                     <a href="/" class="table-data btn btn-outline-success">Link</a>
                                 </div>
                             </div>
-                            <div class="table-row">
-                                <h3>Class Name</h3>
-                                <hr class="m-0 mb-3">
-                                <div class="table-row-inner">
-                                    <div> 
-                                        <p class="lead">15 July, Friday, 10:30AM</p>
-                                    </div>
-                                    <a href="/" class="table-data lead">10 students enrolled</a>
-                                    <a href="/" class="table-data btn btn-outline-success">Link</a>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="table-footer py-3 bg-warning">
+                            <p class="mb-0 text-center">
+                                <a href="#" class="text-dark lead"><i class="mr-2 fas fa-list-ul"></i>View all upcoming classes</a>                
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -247,49 +268,49 @@
                         </div>
                         <div class="table-content">
                             <div class="table-row">
-                                <h3>Class Name</h3>
+                                <h3 class="">Class Name <span class="ml-1 ml-md-3 lead">(8 July, Friday, 4:00PM)</span></h3>
                                 <hr class="m-0 mb-3">
                                 <div class="table-row-inner">
-                                    <div> 
-                                        <p class="lead">15 July, Friday, 10:30AM</p>
+                                    <div>
+                                        <a href="/" class="table-data lead">10 students attended</a>
                                     </div>
-                                    <a href="/" class="table-data lead">10 students attended</a>
-                                    <a href="/" class="table-data btn btn-outline-success">Feedback</a>
+                                    <div>
+                                        <p class="lead">Earnings : 5000</p>
+                                    </div>                                 
+                                    <a href="/" class="table-data btn btn-outline-success">Assessment</a>
                                 </div>
                             </div>
                             <div class="table-row">
-                                <h3>Class Name</h3>
+                                <h3 class="">Class Name <span class="ml-1 ml-md-3 lead">(8 July, Friday, 4:00PM)</span></h3>
                                 <hr class="m-0 mb-3">
                                 <div class="table-row-inner">
-                                    <div> 
-                                        <p class="lead">15 July, Friday, 10:30AM</p>
+                                    <div>
+                                        <a href="/" class="table-data lead">10 students attended</a>
                                     </div>
-                                    <a href="/" class="table-data lead">10 students attended</a>
-                                    <a href="/" class="table-data btn btn-outline-success">Feedback</a>
+                                    <div>
+                                        <p class="lead">Earnings : 5000</p>
+                                    </div>                                 
+                                    <a href="/" class="table-data btn btn-outline-success">Assessment</a>
                                 </div>
                             </div>
                             <div class="table-row">
-                                <h3>Class Name</h3>
+                                <h3 class="">Class Name <span class="ml-1 ml-md-3 lead">(8 July, Friday, 4:00PM)</span></h3>
                                 <hr class="m-0 mb-3">
                                 <div class="table-row-inner">
-                                    <div> 
-                                        <p class="lead">15 July, Friday, 10:30AM</p>
+                                    <div>
+                                        <a href="/" class="table-data lead">10 students attended</a>
                                     </div>
-                                    <a href="/" class="table-data lead">10 students attended</a>
-                                    <a href="/" class="table-data btn btn-outline-success">Feedback</a>
+                                    <div>
+                                        <p class="lead">Earnings : 5000</p>
+                                    </div>                                 
+                                    <a href="/" class="table-data btn btn-outline-success">Assessment</a>
                                 </div>
                             </div>
-                            <div class="table-row">
-                                <h3>Class Name</h3>
-                                <hr class="m-0 mb-3">
-                                <div class="table-row-inner">
-                                    <div> 
-                                        <p class="lead">15 July, Friday, 10:30AM</p>
-                                    </div>
-                                    <a href="/" class="table-data lead">10 students attended</a>
-                                    <a href="/" class="table-data btn btn-outline-success">Feedback</a>
-                                </div>
-                            </div>
+                        </div>
+                        <div class="table-footer py-3 bg-danger">
+                            <p class="mb-0 text-center">
+                                <a href="#" class="text-white lead"> <i class="mr-2 fas fa-list-ul"></i>View all past classes</a>                
+                            </p>
                         </div>
                     </div>
                 </div>            
